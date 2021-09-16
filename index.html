@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+  <header>
+    <div class="header_container center">
+      <div class="navbar">
+        <div class="logo">
+          <img src="image/logo.jpg">
+        </div>
+
+        <nav>
+          <ul id="menuitem">
+            <li class="active"><a href="index.html">HOME</a></li>
+            <li><a href="index.html">ABOUT</a></li>
+            <li><a href="contact.html">GALLERY</a></li>
+            <li><a href="account.html">TESTIMONIAL</a></li>
+            <li><a href="account.html">SERVICES</a></li>
+            <i class="fa fa-search"></i>
+          </ul>
+        </nav>
+        <span class="fa fa-bars" onclick="menutoggle()"></span>
+      </div>
+
+      <div class="home flex mtop">
+        <div class="left">
+          <h1>Italian Food</h1>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button>Read More</button>
+        </div>
+        <div class=" right">
+          <div class="img">
+            <img src="image/h.png" alt="">
+          </div>
+          <div class="img1">
+            <img src="image/h2.png" alt="">
+          </div>
+          <div class="img2">
+            <img src="image/h3.png" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+
+  <script>
+    var menuitem = document.getElementById("menuitem");
+    menuitem.style.maxHeight = "0px";
+
+    function menutoggle() {
+      if (menuitem.style.maxHeight == '0px') {
+        menuitem.style.maxHeight = "200px"
+      } else {
+        menuitem.style.maxHeight = "0px"
+      }
+    }
+
+    window.addEventListener("scroll", function() {
+      var header = document.querySelector("header");
+      header.classList.toggle("sticky", window.scrollY > 0);
+    })
+  </script>
+
+
+
+  <section class="food_items top center">
+    <div class="container">
+      <div class="heading center">
+        <h2>Find your best food</h2>
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+      <div class="content grid mtop">
+        <div class="box">
+          <img src="image/i1.png" alt="">
+          <h3>Lorem Ipsum</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+          <img src="image/i2.png" alt="">
+          <h3>Lorem Ipsum</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+          <img src="image/i3.png" alt="">
+          <h3>Lorem Ipsum Dolor</h3>
+          <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <button class="btn1">Read More</button>
+    </div>
+  </section>
+
+
+
+  <section class="wrapper mtop center">
+    <div class="container">
+      <div class="heading center">
+        <h2>The Restaurant</h2>
+      </div>
+
+      <div class="text flex text_left">
+        <div class="box">
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <button>Read More</button>
+    </div>
+  </section>
+
+
+
+  <section class="offer mtop center">
+    <div class="container">
+      <div class="box flex">
+        <div class="left">
+          <img src="image/i1.png">
+        </div>
+        <div class="right">
+          <h1>Discount up to <br> 50% All Excursion</h1>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="btn1">Read More</button>
+        </div>
+      </div>
+      <div class="box1 flex">
+        <div class="left">
+          <img src="image/i3.png">
+        </div>
+        <div class="right">
+          <h1>January's Promo: <br> Buy 1 Get 1 Free! </h1>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <button class="btn1">Read More</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+  <header class="wrapper1">
+    <div class="container">
+      <div class="heading center">
+        <h2>lorem Ipusum Dolor Sit Amer</h2>
+        <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="img">
+        <img src="image/n.png" alt="">
+      </div>
+    </div>
+  </header>
+
+
+
+  <section class="services center top">
+    <div class="container">
+      <div class="content grid">
+        <div class="box">
+          <h2>SERVICES ONE</h2>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+          <h2>SERVICES TWO</h2>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+        <div class="box">
+          <h2>SERVICES THREE</h2>
+          <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      <button class="btn1">view more</button>
+    </div>
+  </section>
+
+
+
+  <section class="newletter center mtop">
+    <div class="container">
+      <h1>Newsletter</h1>
+      <p> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+      <div class="input flex">
+        <input type="text" placeholder="Your Email">
+        <input type="submit" placeholder="SUBSCRIBE">
+      </div>
+    </div>
+  </section>
+
+
+  <footer>
+    <div class="container grid top">
+      <div class="box">
+        <img src="image/logo.jpg">
+        <p> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <div class="icon">
+          <i class="fa fa-instagram"></i>
+          <i class="fa fa-twitter"></i>
+          <i class="fa fa-youtube"></i>
+          <i class="fa fa-facebook"></i>
+        </div>
+      </div>
+
+      <div class="box">
+        <h3>About Us</h3>
+        <ul>
+          <li>History</li>
+          <li>Our Team</li>
+          <li>Brnad Guidelines</li>
+          <li>Terms & Condition</li>
+          <li>Privacy Policy</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Services</h3>
+        <ul>
+          <li>How To Oder</li>
+          <li>Our Product</li>
+          <li>Oder Status</li>
+          <li>Promo</li>
+          <li>Payment Methods</li>
+        </ul>
+      </div>
+      <div class="box">
+        <h3>Other</h3>
+        <ul>
+          <li>Contact</li>
+          <li>Help</li>
+          <li>Privacy</li>
+        </ul>
+      </div>
+    </div>
+    <p class="legal">Copyright (c) 2021 Copyright Holder All Rights Reserved | This Template is made by <i class="fa fa-heart"></i> Dot Studio.</p>
+  </footer>
+</body>
+
+</html>
